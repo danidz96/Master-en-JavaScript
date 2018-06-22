@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aprendiendo jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type='text/javascript' src="js/interface.js"></script>
+
+    <style>
+        .elemento {
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            background: lightblue;
+            margin: 20px;
+            float: left;
+        }
+
+        .lista-seleccionable li {
+            width: 80%;
+            padding: 20px;
+            border: 1px solid black;
+            list-style: none;
+            cursor: pointer;
+            margin: 10px auto;
+        }
+
+        ul .ui-selecting {
+            background: lightcoral
+        }
+
+        ul .ui-selected {
+            background: midnightblue;
+            color: white;
+        }
+
+        #elemento-movido {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+        }
+        #area {
+            width: 300px;
+            height: 300px;
+            border: 2px solid orange;
+            margin: 20px;
+        }
+        .caja-efectos{
+            background: pink;
+            float: none;
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Aprendiendo Jquery</h1>
+
+    <h3>Tooltip</h3>
+   
+    <a href="#" title="Acceder a la seccion de mis datos">Mis datos</a>
+
+    <h3>Cuadros de dialogo</h3>
+    <button id="activar-popup">Activar</button>
+    <div id="popup" title="estas seguro?">
+        <p>
+            Si continuas...
+        </p>
+    </div>
+
+    <h3>Calendario</h3>
+    <input type="datetime" name="" id="calendario">
+
+    <h3>Pestañas</h3>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Pestaña uno</a></li>
+            <li><a href="#tabs-2">Pestaña dos</a></li>
+            <li><a href="#tabs-3">Pestaña tres</a></li>
+        </ul>
+        <div id="tabs-1">
+            fdsjkfh djskafhjkdshaf jsadhf kjhdsfljkhsd fjhlsdf 
+        </div>
+        <div id="tabs-2">
+            fdsfasf
+        </div>
+        <div id="tabs-3">
+            fsdaf dsfh dskjfhkjsdf
+        </div>
+    </div>
+
+    <hr>
+    <button id="mostrar">
+        Mostrar
+    </button>
+
+    <div class="caja-efectos elemento">
+
+    </div>
+
+    <div id="elemento-movido">
+
+    </div>
+    <div id="area">
+
+    </div>
+
+    <ul class="lista-seleccionable">
+        <li>LoL</li>
+        <li>CS:GO</li>
+        <li>GTA 5</li>
+    </ul>
+
+    <div class="elemento">
+        <p>Hola, soy un elemento de la web</p>
+    </div>
+    <div class="elemento">
+        <p>Hola, soy un elemento de la web</p>
+    </div>
+    <div class="elemento">
+        <p>Hola, soy un elemento de la web</p>
+    </div>
+
+</body>
+
+</html>
